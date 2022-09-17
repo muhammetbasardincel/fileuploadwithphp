@@ -37,7 +37,7 @@ echo "File Size: " . $fileSize;
 echo "File Size:". round($fileSize/1024/1024,2) . " MB";
 
 // Get File Upload Error Code
-$fileError = $file["error"]; // sorun yoksa 0 değeri dönüyor
+$fileError = $file["error"]; // If there is no problem, it returns 0.
 echo "File Upload Error Code: " . $fileError;
 
 // Get File Temp Path
