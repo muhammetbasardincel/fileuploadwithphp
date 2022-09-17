@@ -2,7 +2,7 @@
 
 - by Muhammet Başar Dinçel
 
-## file.html
+## fileUpload.html
 
 ```
 <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -14,6 +14,7 @@
 
 ## upload.php
 
+```php
 $file = $_FILES["files"];
 
 // Get File Name 
@@ -47,3 +48,4 @@ echo "File Temp Path: " . $fileTemp;
 $extension = explode(".", $fileFullName);
 $extension = $extension[count($extension) - 1];
 echo "File Extension: ".  $extension;
+```
